@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(222, 222, 222);
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    font-weight: 500;
+}
+
+.board {
+    width: 400px;
+    margin: 20px auto;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    color: #000000;
+    background-color: rgba(204, 204, 204, 0.653);
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    width: 120px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: rgba(169, 169, 169, 0.721);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.move-history {
+    margin-top: 20px;
+    border: 1px solid  #ccc;
+    padding: 10px;
+    border-radius: 7px;
+    height: 100px;
+    width: 400px;
+    overflow-y: scroll;
+    background-color:rgba(204, 204, 204, 0.457)
+}
